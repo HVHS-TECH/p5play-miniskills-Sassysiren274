@@ -9,7 +9,7 @@ let sprite;
 /*******************************************************/
 function setup() {
   console.log("setup");
-  new Canvas(250, 100);
+  new Canvas(1250,650);
 
   sprite = new Sprite();
   sprite.width = 50;
@@ -22,7 +22,7 @@ function setup() {
 /*******************************************************/
 function draw() {
   background('navy');
-  sprite.x += 4;
+  sprite.x += 5;
 }
 
 /*******************************************************/
