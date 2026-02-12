@@ -19,16 +19,10 @@ function setup() {
   Square1.color = 'Black';
   Square1.rotationSpeed = 2;
   Square1.vel.x = 2;
-  //
-  Square2 = new Sprite(200,200,150,150,'10');
-  Square2.color = 'Green';
-  Square2.rotationSpeed = 2;
-  Square2.vel.x = 2;
-}
 //
  ground = new Sprite(625, 630, 1250, 40, "static");
   ground.color = "white";
-	
+}
 /*******************************************************/
 // draw()
 /*******************************************************/
