@@ -9,8 +9,7 @@ let sprite;
 /*******************************************************/
 function setup() {
   console.log("setup");
-  //new Canvas(1250,650);
-  new Canvas(300,600)
+  new Canvas(1250,650);
   sprite = new Sprite();
   sprite.width = 300;
   sprite.height = 600;

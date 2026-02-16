@@ -3,25 +3,20 @@
 // Sprite falls due to gravity
 // Written by ???
 /*******************************************************/
-let square1;
-let square2;
-let ground;
+let sprite;
 /*******************************************************/
 // setup()
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
 //canvas
-	new Canvas(1250,650);
+	cnv = new Canvas(1250,650);
 	world.gravity.y = 10;
 	
-  Square1 = new Sprite(300,300,200,200,'10');
-  Square1.color = 'Black';
-  Square1.rotationSpeed = 2;
-  Square1.vel.x = 2;
-//
- ground = new Sprite(625, 630, 1250, 40, "static");
-  ground.color = "white";
+  Square = new Sprite(300,300,200,200,);
+  Square.color = 'Black';
+  Square.rotationSpeed = 2;
+  Square.vel.x = 2;
 }
 /*******************************************************/
 // draw()
