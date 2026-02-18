@@ -9,6 +9,14 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
+function preload() {
+
+  imgBG   = loadImage('../assets/images/space.jpg');
+
+  imgFace = loadImage('../assets/images/face.png');
+
+}
+cnv = new Canvas(w, h);
 
 }
 	
@@ -16,7 +24,7 @@ function setup() {
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background(imgBG); 
 }
 
 /*******************************************************/

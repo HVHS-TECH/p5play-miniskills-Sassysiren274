@@ -11,6 +11,7 @@ function setup() {
 	console.log("setup: ");
 //canvas
 	new Canvas(1250,650);
+  	world.gravity.y = 10;
   //
   wallLH  = new Sprite(0, height/2, 8, height, 'k');
   wallLH.color = 'black';
@@ -27,6 +28,15 @@ function setup() {
   ball_1.bounciness = 1;
   ball_1.friction = 0;
   ball_1.drag = 0;
+  //
+  for (i = 0; i < 10; i++) {
+    alien = new Sprite(100 + i*100, 100, 30, 'd');
+    alien.colour = "Purple";
+    alien.vel.x = 2;
+    alien.vel.y = 2;
+    alien.bounciness = 1;
+    alien.friction = 0;
+}
 }
 /*******************************************************/
 // draw()
