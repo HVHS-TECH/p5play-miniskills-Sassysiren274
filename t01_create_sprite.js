@@ -17,20 +17,31 @@ function setup() {
   ///
   cnv = new Canvas(500, 500);
 
-red = new   Sprite(50,50,100,100);
-red.color = 'red';
+//create a line of 10 sprites across the top of the screen
+for (var i = 0; i < 1; i++) {
+  var block = new Sprite(i*70 + 40, 50, 50, 50);
+  block.color = color(255, 0, 0); // Red color
+}
 
-green = new Sprite(450,45,100,100);
-green.color = 'green';
+for (var i = 1; i < 2; i++) {
+  var block = new Sprite(i*70 + 40, 100, 50, 50);
+  block.color = color(255, 0, 0); // Red color
+}
 
-blue = new Sprite(450,450,100,100);
-blue.color = 'blue';
+for (var i = 2; i < 3; i++) {
+  var block = new Sprite(i*70 + 40, 200, 50, 50);
+  block.color = color(255, 0, 0); // Red color
+}
 
-yellow = new Sprite(40,450,100,100);
-yellow.color = 'yellow';
+for (var i = 3; i < 4; i++) {
+  var block = new Sprite(i*70 + 40, 300, 50, 50);
+  block.color = color(255, 0, 0); // Red color
+}
 
-purple = new Sprite(250,250,100,100);
-purple.color = 'purple';
+for (var i = 4; i < 5; i++) {
+  var block = new Sprite(i*70 + 40, 400, 50, 50);
+  block.color = color(255, 0, 0); // Red color
+}
 }
 /*******************************************************/
 // draw()
