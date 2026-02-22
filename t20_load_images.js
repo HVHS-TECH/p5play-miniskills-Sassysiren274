@@ -7,8 +7,6 @@
 /*******************************************************/
 // setup()
 /*******************************************************/
-function setup() {
-	console.log("setup: ");
 function preload() {
 
   imgBG   = loadImage('../assets/images/space.jpg');
@@ -16,6 +14,9 @@ function preload() {
   imgFace = loadImage('../assets/images/face.png');
 
 }
+function setup() {
+	console.log("setup: ");
+
 cnv = new Canvas(w, h);
 
 }
