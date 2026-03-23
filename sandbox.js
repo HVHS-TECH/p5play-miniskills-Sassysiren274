@@ -17,6 +17,23 @@ function setup() {
   Square.rotationSpeed = 2;
   Square.vel.x = 2;
 }
+function draw() {
+
+  // Example movement
+  if (kb.pressing('right')) {
+    player.vel.x = 2;
+  } else {
+    player.vel.x = 0;
+  }
+
+  // Change colour after x = 200
+  if (player.x > 200) {
+    player.color = 'red';
+  } else {
+    player.color = 'blue';
+  }
+
+}
 	
 /*******************************************************/
 // draw()
